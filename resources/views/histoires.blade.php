@@ -23,10 +23,21 @@
 
   </head>
   <body>
+  <br>                  <!--titre-->
+
+    <div class="content">
+      <div class="title m-b-md">
+        <img src="img/histoires.png">
+      </div>
+    </div>
+
+
+<br>
+                    <!-- Book 1 -->
 
     <div class="component">
   <ul class="align">
-                            <!-- Book 1 -->
+
       @foreach($histoires as $histoire)
     <li>
       <figure class='book'>

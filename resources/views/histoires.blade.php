@@ -26,21 +26,24 @@
 
     <div class="component">
   <ul class="align">
-                          <!-- Book 1 -->
+
+      @foreach($histoires as $histoire)                    <!-- Book 1 -->
     <li>
       <figure class='book'>
         <!-- Front -->
         <ul class='hardcover_front'>
+
           <li>
-            <img src="img/pocahontas1.jpeg" alt="" width="100%" height="100%">
+            <img src="{{asset($histoire->img)}}" alt="" width="100%" height="100%">
           </li>
+
           <li></li>
         </ul>
         <!-- Pages -->
         <ul class='page'>
           <li></li>
           <li>
-            <a class="btn" href="">Lire</a>
+            <a class="btn" href="texte">Lire</a>
           </li>
           <li></li>
           <li></li>
@@ -59,6 +62,7 @@
     </li>
       </figure>
     </li>
+    @endforeach
   </ul>
 </div>
 

@@ -23,9 +23,8 @@ Route::get('/jeux', function () {
     return view('jeux');
 });
 
-Route::get('/histoires', function () {
-    return view('histoires');
-});
+Route::get('/histoires','histoiresController@index');
+Route::get('/histoires/{n}','histoiresController@show');
 
 Auth::routes();
 

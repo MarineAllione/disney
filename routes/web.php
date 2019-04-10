@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/texte', function () {
+    return view('texte');
+});
+
 Route::get('/films', function () {
     return view('films');
 });
@@ -22,6 +26,18 @@ Route::get('/films', function () {
 Route::get('/jeux', function () {
     return view('jeux');
 });
+
+Route::get('/jeux1', function () {
+    return view('jeux1');
+});
+
+Route::get('/jeux2', function () {
+    return view('jeux2');
+});
+Route::get('/jeux3', function () {
+    return view('jeux3');
+});
+
 
 Route::get('/histoires','histoiresController@index');
 Route::get('/histoires/{n}','histoiresController@show');

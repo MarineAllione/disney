@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -24,14 +26,14 @@
   <body>
   <br>                  <!--titre-->
 
-@foreach ($variable as $hitoires => $texte)
-
-@endforeach
-
+    <div class="content">
+      <div class="title m-b-md">
+        <img src="img/jeux.png">
+      </div>
+    </div>
 <br>
 
-
-
+    <canvas id="myCanvas" width="480" height="320"></canvas>
                       <!-- btn retour-->
 <form>
     <div class="content">

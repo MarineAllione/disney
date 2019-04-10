@@ -114,7 +114,7 @@ Table of Contents
 }
 
 /*
-	2. background & color
+	2. background & colorm-b-md
 */
 
 /* HARDCOVER FRONT */
@@ -644,5 +644,6 @@ Table of Contents
 
 	.book {
 		margin: 0 auto;
+    
 	}
 }

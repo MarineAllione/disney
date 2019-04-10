@@ -11,6 +11,7 @@
             background-image: url('img/i.jpg');
             background-size: cover;
 
+
         }
 
         .content {
@@ -30,7 +31,7 @@
         <!-- Front -->
         <ul class='hardcover_front'>
           <li>
-            <img src="" alt="" width="100%" height="100%">
+            <img src="img/pocahontas1.jpeg" alt="" width="100%" height="100%">
           </li>
           <li></li>
         </ul>

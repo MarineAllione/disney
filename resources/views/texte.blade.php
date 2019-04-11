@@ -8,7 +8,7 @@
     <!-- Styles -->
     <style>
         html, body {
-            background-image: url('img/i.jpg');
+            background-image: url('../img/i.jpg');
             background-size: cover;
 
 
@@ -26,7 +26,7 @@
 
   <div class="content">
     <div class="title m-b-md">
-      <img src="img/histoires.png">
+      <img src="../img/histoires.png">
     </div>
   </div>
 
@@ -39,7 +39,7 @@
 <form>
     <div class="content">
       <div class="title m-b-md">
-        <img type = "button" src="img/retour.png" onclick = "history.back()">
+        <img type = "button" src="../img/retour.png" onclick = "history.back()">
       </div>
     </div>
 </form>

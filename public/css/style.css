@@ -17,7 +17,7 @@ body {
 	margin :auto;
 	border: 2px black solid;
 	border-radius: 4px;
-	
+
 }
 
 #scores {
@@ -45,11 +45,11 @@ body {
 }
 
 #scores .player1 {
-	color: #00007f;
+	color: #ffffff;
 }
 
 #scores .player2 {
-	color: #7f0000;
+	color: #a37cc1;
 }
 
 #scores p.scores-title {

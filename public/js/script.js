@@ -39,22 +39,22 @@ function drawGrid(){
 }
 
 function drawCross(x,y) {
-	context.strokeStyle="#00007f";
+	context.strokeStyle="#ffffff";
 	context.lineWidth=3;
 	context.beginPath();
 	context.moveTo(x-(caseSize/2)+margin, y-(caseSize/2)+margin);
 	context.lineTo(x+(caseSize/2)-margin, y+(caseSize/2)-margin);
 	context.moveTo(x-(caseSize/2)+margin, y+(caseSize/2)-margin);
 	context.lineTo(x+(caseSize/2)-margin, y-(caseSize/2)+margin);
-	context.stroke();	
+	context.stroke();
 }
 
 function drawCircle(x,y) {
-	context.strokeStyle="#7f0000";
+	context.strokeStyle="#a37cc1";
 	context.lineWidth=3;
 	context.beginPath();
 	context.arc(x, y, (caseSize/2)-margin, 0, 2*Math.PI, true);
-	context.stroke();	
+	context.stroke();
 }
 
 function drawSector(x,y,i) {
@@ -97,25 +97,25 @@ function theEnd(player) {
 	nbMatchesPlayed++;
 	if(nbMatchesPlayed<2) $("#nbMatches").html(nbMatchesPlayed+" manche");
 	else $("#nbMatches").html(nbMatchesPlayed+" manches");
-	
+
 	if(player == 1) {
 		$("#scoreMessages").html("<strong class=\"player1\">Le joueur 1 remporte la manche !</strong><br /><br />"
 								+"<button onClick=\"newMatch()\">Nouvelle manche</button><br />"
 								+"<button onClick=\"newGame()\">Nouvelle partie</button>");
 		scorePlayer1++;
-		if(scorePlayer1<2) $("#score1").html(scorePlayer1+" pt");	
+		if(scorePlayer1<2) $("#score1").html(scorePlayer1+" pt");
 		else $("#score1").html(scorePlayer1+" pts");
 	} else if(player == 2) {
 		$("#scoreMessages").html("<strong class=\"player2\">Le joueur 2 remporte la manche !</strong><br /><br />"
 								+"<button onClick=\"newMatch()\">Nouvelle manche</button><br />"
 								+"<button onClick=\"newGame()\">Nouvelle partie</button>");
 		scorePlayer2++;
-		if(scorePlayer2<2) $("#score2").html(scorePlayer2+" pt");	
-		else $("#score2").html(scorePlayer2+" pts");	
+		if(scorePlayer2<2) $("#score2").html(scorePlayer2+" pt");
+		else $("#score2").html(scorePlayer2+" pts");
 	} else {
 		$("#scoreMessages").html("<strong>Match nul !</strong><br /><br />"
 								+"<button onClick=\"newMatch()\">Nouvelle manche</button><br />"
-								+"<button onClick=\"newGame()\">Nouvelle partie</button>");	
+								+"<button onClick=\"newGame()\">Nouvelle partie</button>");
 	}
 }
 
@@ -168,23 +168,20 @@ $("#canvas").click(function(e){
 	var col = 0;
 	var row = 0;
 	var index = 0;
-	
+
 	if(x < caseSize) { centerX = caseSize/2; col = 0; }
 	else if(x < 2*caseSize) { centerX = 3*caseSize/2; col = 1; }
 	else { centerX = 5*caseSize/2; col = 2; }
-	
+
 	if(y < caseSize) { centerY = caseSize/2; row = 0; }
 	else if(y < 2*caseSize) { centerY = 3*caseSize/2; row = 1; }
 	else { centerY = 5*caseSize/2; row = 2; }
-	
+
 	index = col + 3 * row;
 	if(!isCaseFull[index] && !isTheEnd) {
 		isCaseFull[index] = true;
 		nbCaseFull++;
 		drawSector(centerX,centerY,index)
 	}
-	
+
 });
-
-
-

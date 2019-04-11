@@ -32,22 +32,46 @@
 
 <body>
 
+	<div class="content">
+		<div class="title m-b-md">
+			<img src="img/morpion.png">
+		</div>
+	</div>
+<br>
+<br>
+
+													<!--jeux-->
 	<div id="field">
 		<canvas id="canvas" width="400" height="400">
 			<p>
 			D�sol�, votre navigateur ne supporte pas Canvas. Mettez-vous � jour. Ou utilisez Firefox ou Google Chrome.
 			</p>
 		</canvas>
+
 		<div id="scores">
-			<h1>Morpion</h1>
-			<h2>Par Wandrille K.</h2>
+<br>
 			<p id="nbMatches">0 manche</p>
 			<p class="scores-title">Scores</p>
+<br>
 			<p id="player1" class="player1"><strong>X</strong> Joueur 1 : <span id="score1">0</span></p>
 			<p id="player2" class="player2"><strong>O</strong> Joueur 2 : <span id="score2">0</span></p>
 			<p id="scoreMessages" class="messages"></p>
 		</div>
 	</div>
+
+
+	<br>
+	<br>
+	                      <!-- btn retour-->
+	<form>
+	    <div class="content">
+	      <div class="title m-b-md">
+	        <img type = "button" src="img/retour.png" onclick = "history.back()">
+	      </div>
+	    </div>
+	</form>
+
+
 	<script type="text/javascript" src="js/jquery.js"> </script>
 	<script type="text/javascript" src="js/script.js"> </script>
 

@@ -11,6 +11,7 @@
         html, body {
             background-image: url('img/i.jpg');
             background-size: cover;
+            background-attachment: fixed;
 
 
         }
@@ -38,8 +39,8 @@
 <div class="content">
   <div class="m-b-md">
     <div class="component">
+      <ul class="align">
       @foreach($histoires as $histoire)
-  <ul class="align">
     <li>
       <figure class='book'>
         <!-- Front -->
@@ -73,9 +74,9 @@
       </figure>
     </li>
       </figure>
-    </li>
-  </ul>
+    </li>  
   @endforeach
+  </ul>
 </div>
 </div>
 </div>

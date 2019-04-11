@@ -31,14 +31,15 @@
       </div>
     </div>
 
-
+<br>
 <br>
                     <!-- Book 1 -->
 
+<div class="content">
+  <div class="m-b-md">
     <div class="component">
-  <ul class="align">
-
       @foreach($histoires as $histoire)
+  <ul class="align">
     <li>
       <figure class='book'>
         <!-- Front -->
@@ -73,8 +74,10 @@
     </li>
       </figure>
     </li>
-    @endforeach
   </ul>
+  @endforeach
+</div>
+</div>
 </div>
 
                       <!-- btn retour-->

@@ -111,6 +111,7 @@ Table of Contents
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+  margin: auto;
 }
 
 /*

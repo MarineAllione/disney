@@ -31,17 +31,18 @@
       </div>
     </div>
 <br>
-
-@foreach ($films => $url)
-
+                    <!--films-->
+@foreach($films as $film)
+<div class="content">
+  <div class="title m-b-md">
+<br>
+    <iframe width="759" height="315" src="{{$film->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+  </div>
+</div>
 @endforeach
-    <div class="content">
-      <div class="title m-b-md">
 
-      </div>
-    </div>
-
-
+<br>
                       <!-- btn retour-->
 <form>
     <div class="content">

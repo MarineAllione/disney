@@ -12,8 +12,6 @@
             background-image: url('img/i.jpg');
             background-size: cover;
             background-attachment: fixed;
-
-
         }
 
         .content {

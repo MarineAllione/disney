@@ -20,9 +20,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/films', function () {
-    return view('films');
-});
 
 Route::get('/jeux', function () {
     return view('jeux');
@@ -39,7 +36,7 @@ Route::get('/jeux3', function () {
     return view('jeux3');
 });
 
-
+Route::get('/films','filmsController@index');
 Route::get('/histoires','histoiresController@index');
 Route::get('/histoires/{n}','histoiresController@show')->name('histoire');
 

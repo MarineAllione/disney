@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Histoires</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/neon.css">
     <!-- Styles -->
     <style>
         html, body {
@@ -22,16 +22,24 @@
 
   </head>
   <body>
-<br>                 <!--titre-->
+<br>
+                <!--titre-->
 
   <div class="content">
     <div class="title m-b-md">
       <img src="../img/histoires.png">
     </div>
   </div>
+<br>
+<br>
+              <!--texte-->
+  <div class="container">
+  <h1 class="neon">{{ $texte->texte }}</h1>
+</div>
 
 
-{{ $texte->texte }}
+
+
 
 <br>
 

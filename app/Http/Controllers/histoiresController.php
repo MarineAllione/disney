@@ -46,8 +46,8 @@ class histoiresController extends Controller
   */
  public function show($id)
  {
-   $histoires=DB::table('histoires')->where('id',$id)->first();
-   return view('texte')->with('texte',$histoires);
+   $histoire=DB::table('histoires')->where('id',$id)->first();
+   return view('texte')->with('histoire',$histoire);
  }
 
  /**

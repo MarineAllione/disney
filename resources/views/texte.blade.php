@@ -25,16 +25,18 @@
 <br>
                 <!--titre-->
 
-  <div class="content">
-    <div class="title m-b-md">
-      <img src="../img/histoires.png">
-    </div>
+<div class="content">
+  <div class="title m-b-md">
+    <img src="{{asset($histoire->titre)}}">
   </div>
+</div>
+
+
 <br>
 <br>
               <!--texte-->
   <div class="container">
-  <h1 class="neon">{{ $texte->texte }}</h1>
+  <h1 class="neon">{{ $histoire->texte }}</h1>
 </div>
 
 

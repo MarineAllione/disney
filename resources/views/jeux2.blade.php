@@ -16,6 +16,8 @@
   html, body {
   background-image: url('img/i.jpg');
   background-size: cover;
+  background-attachment: fixed;
+
 
 
   }
@@ -28,7 +30,16 @@
 </head>
 
 <body>
+                  <!--titre-->
+  <div class="content">
+    <div class="title m-b-md">
+      <img src="img/memory.png">
+    </div>
+  </div>
+  <br>
+  <br>
 
+                      <!--jeux-->
     <div class="modal fade" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="winnerModal-label">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -46,7 +57,7 @@
     </div>
 
     <div class="container">
-        <h1>Ben's Memory Game</h1>
+
         <section class="score-panel">
             <ul class="stars">
                 <li>
@@ -64,9 +75,22 @@
             <div class="restart">
                 <i class="fa fa-repeat"></i>
             </div>
+<br>
         </section>
         <ul class="deck"></ul>
     </div>
+
+                      <!-- btn retour-->
+    <form>
+      <div class="content">
+        <div class="title m-b-md">
+          <img type = "button" src="img/retour.png" onclick = "history.back()">
+        </div>
+      </div>
+    </form>
+
+
+                    <!--script-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>

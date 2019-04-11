@@ -24,7 +24,7 @@
   <body>
   <br>                  <!--titre-->
 
-@foreach ($variable as $hitoires => $texte)
+@foreach ($hitoires => $texte)
 
 @endforeach
 

@@ -56,7 +56,7 @@
         <ul class='page'>
           <li></li>
           <li>
-            <a class="btn" href="texte">Lire</a>
+            <a class="btn" href="{{ route('histoire', ['n'=>$histoire->id]) }}">Lire</a>
           </li>
           <li></li>
           <li></li>
@@ -74,7 +74,7 @@
       </figure>
     </li>
       </figure>
-    </li>  
+    </li>
   @endforeach
   </ul>
 </div>

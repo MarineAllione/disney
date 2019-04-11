@@ -32,7 +32,7 @@
     </div>
 <br>
 
-@foreach ($variable as $films => $url)
+@foreach ($films => $url)
 
 @endforeach
     <div class="content">

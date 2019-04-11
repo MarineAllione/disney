@@ -19,9 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/texte', function () {
-    return view('texte');
-});
 
 Route::get('/films', function () {
     return view('films');
@@ -44,7 +41,7 @@ Route::get('/jeux3', function () {
 
 
 Route::get('/histoires','histoiresController@index');
-Route::get('/histoires/{n}','histoiresController@show');
+Route::get('/histoires/{n}','histoiresController@show')->name('histoire');
 
 Auth::routes();
 

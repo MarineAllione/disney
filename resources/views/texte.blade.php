@@ -22,15 +22,18 @@
 
   </head>
   <body>
-  <br>                  <!--titre-->
+<br>                 <!--titre-->
 
-@foreach ($hitoires => $texte)
+  <div class="content">
+    <div class="title m-b-md">
+      <img src="img/histoires.png">
+    </div>
+  </div>
 
-@endforeach
+
+{{ $texte->texte }}
 
 <br>
-
-
 
                       <!-- btn retour-->
 <form>

@@ -11,12 +11,6 @@
 |
 */
 
-
-Route::get('/histoiretest', function () {
-    return view('histoiretest');
-});
-
-
 Route::get('/', function () {
     return view('welcome');
 });

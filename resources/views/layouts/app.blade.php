@@ -43,7 +43,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Mon compte') }}</a>
                             </li>
-                            @if (Route::has('Créer mon compte'))
+                            @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Créer mon compte') }}</a>
                                 </li>
